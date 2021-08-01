@@ -7,7 +7,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 Image.MAX_IMAGE_PIXELS = None
 
 # original_pics_paths
-opps = "D:/tt_group_total_pics/0519_0_9000/0519_original_0_9000_pics/"
+opps = "D:/tt_groupxxxxx/0519xxxxx/0519_xxxxxxx_pics/"
 fn_type_list = os.listdir(opps)
 
 # fn_list
@@ -22,7 +22,7 @@ count = 1
 for pic_fn in pics_fn_list:
 
     # image.opem(你的路徑)
-    img = Image.open("D:/tt_group_total_pics/0516_0_9000/0516_original_0_9000_pics/" + pic_fn + ".jpg")
+    img = Image.open("D:/tt_xxxxx/0516xxxxxx/0516_xxxx/" + pic_fn + ".jpg")
     (w, h) = img.size
     # print('w=%d, h=%d', w, h)
     # img.show()
@@ -31,7 +31,7 @@ for pic_fn in pics_fn_list:
     # new_img.show()
     # fn_list.zfill()自動補0
 
-    new_img.save("D:/tt_group_total_pics/0519_0_9000/0519_input_resize256x256_0_9000/"+ pic_fn.zfill(4) + ".jpg")
+    new_img.save("D:/tt_groupxxxxx/0519_xxxx/0519_xxxxxx/"+ pic_fn.zfill(4) + ".jpg")
     print("第", count ,"張")
     count += 1
 print("resize finish")
